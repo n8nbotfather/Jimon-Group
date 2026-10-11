@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- JIMON GROUP · выпуск v37 · river v11 + glow v34 -->
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JIMON GROUP — Здоровье. Гармония. Жизненная сила</title>
+  <meta name="description" content="JIMON GROUP">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=38">
+</head>
+<body>
+  <div class="river-flow" aria-hidden="true"><div class="river-track"></div></div>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><span class="logo-icon">金木</span><span class="logo-text">JIMON GROUP</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="advantages.html">Комплексы</a></li>
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+        <li><a href="#" class="btn-nav" onclick="openOrderModal();return false;">Заказать</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">金木集团 · JIMON GROUP · с 1993 года</div>
+      <h1 class="hero-title"><span class="line">Здоровье, гармония</span><span class="line accent">и жизненная сила</span></h1>
+      <p class="hero-subtitle">JIMON GROUP — фармацевтическая корпорация из Китая. Объединяем мудрость традиционной китайской медицины с современными биотехнологиями.</p>
+      <div class="hero-cta">
+        <a href="catalog.html" class="btn btn-primary">Смотреть каталог →</a>
+        <a href="#" class="btn btn-outline" onclick="openOrderModal();return false;">Заказать</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-count="33">0</span><span class="stat-label">лет бренду</span></div>
+        <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">+ стран экспорта</span></div>
+        <div class="stat"><span class="stat-num" data-count="2000">0</span><span class="stat-label">сотрудников</span></div>
+        <div class="stat"><span class="stat-num" data-count="32">0</span><span class="stat-label">продуктов</span></div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>Листайте вниз</span><div class="mouse"></div></div>
+  </header>
+  <div class="marquee" aria-hidden="true"><div class="marquee__track"><span>5000 лет мудрости ТКМ</span><span>Без ГМО</span><span>Стандарт GMP</span><span>Собственная ферма</span><span>HALAL</span><span>40+ стран</span><span>5000 лет мудрости ТКМ</span><span>Без ГМО</span><span>Стандарт GMP</span><span>Собственная ферма</span><span>HALAL</span><span>40+ стран</span></div></div>
+  <section class="about">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">Каталог</span><h2 class="section-title">Десять направлений заботы о здоровье</h2></div>
+            <div class="about-grid">
+        <a href="catalog.html?cat=joints" class="about-card about-card--joints about-card--photo">
+          <img class="about-photo" src="images/categories/joints.jpg" alt="Суставы и кости" width="720" height="720" loading="lazy" decoding="async">
+          <h3>Суставы<br>и кости</h3>
+          <p>Коллаген, хондропротекторы</p>
+        </a>
+        <a href="catalog.html?cat=liver" class="about-card about-card--liver about-card--photo">
+          <img class="about-photo" src="images/categories/liver.jpg" alt="Печень и детокс" width="720" height="720" loading="lazy" decoding="async">
+          <h3>Печень<br>и детокс</h3>
+          <p>Пептиды, куркума, комплексы</p>
+        </a>
+        <a href="catalog.html?cat=heart" class="about-card about-card--heart about-card--photo">
+          <img class="about-photo" src="images/categories/heart.jpg" alt="Сердце и сосуды" width="720" height="720" loading="lazy" decoding="async">
+          <h3>Сердце<br>и сосуды</h3>
+          <p>Натто, шелковица</p>
+        </a>
+        <a href="catalog.html?cat=beauty" class="about-card about-card--beauty about-card--photo">
+          <img class="about-photo" src="images/categories/beauty.jpg" alt="Красота" width="720" height="720" loading="lazy" decoding="async">
+          <h3>Красота</h3>
+          <p>Пептиды, спреи, уход</p>
+        </a>
+        <a href="catalog.html?cat=immunity" class="about-card about-card--immunity about-card--photo">
+          <img class="about-photo" src="images/categories/immunity.jpg" alt="Иммунитет" width="720" height="720" loading="lazy" decoding="async">
+          <h3>Иммунитет</h3>
+          <p>Цикорий, пробиотики</p>
+        </a>
+        <a href="catalog.html?cat=diagnostics" class="about-card about-card--ai about-card--photo">
+          <img class="about-photo" src="images/categories/diagnostics.jpg" alt="Диагностика AI" width="720" height="720" loading="lazy" decoding="async">
+          <h3>Диагностика AI</h3>
+          <p>Подбор продуктов</p>
+        </a>
+        
+		        <a href="catalog.html?cat=breath" class="about-card about-card--breath about-card--photo">
+          <img class="about-photo" src="images/categories/breath.jpg" alt="Дыхание" width="720" height="720" loading="lazy" decoding="async">
+          <h3>Дыхание</h3>
+          <p>Травяные напитки</p>
+        </a>
+
+        <a href="catalog.html?cat=brain" class="about-card about-card--brain about-card--photo">
+          <img class="about-photo" src="images/categories/brain.jpg" alt="Мозг" width="720" height="720" loading="lazy" decoding="async">
+          <h3>Мозг</h3>
+          <p>Память, концентрация</p>
+        </a>
+
+        <a href="catalog.html?cat=energy" class="about-card about-card--energy about-card--photo">
+          <img class="about-photo" src="images/categories/energy.jpg" alt="Энергия и питание" width="720" height="720" loading="lazy" decoding="async">
+          <h3>Энергия<br>и питание</h3>
+          <p>Женьшень, каши, тонус, нефрит</p>
+        </a>
+
+        <a href="catalog.html?cat=sleep" class="about-card about-card--sleep about-card--photo">
+          <img class="about-photo" src="images/categories/sleep.jpg" alt="Сон и релаксация" width="720" height="720" loading="lazy" decoding="async">
+          <h3>Сон<br>и релаксация</h3>
+          <p>Напитки, ванночки, расслабление</p>
+        </a>
+      </div>
+</div>
+  </section>
+  <section class="catalog" id="hits">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Хиты</span>
+        <h2 class="section-title">Популярные продукты</h2>
+        <p class="section-desc">По рейтингу и отзывам покупателей</p>
+      </div>
+      <div class="products-grid">
+        <article class="product-card " data-category="beauty" data-title="суланьцао — спрей для лица" data-search="суланьцао — спрей для лица спрей. заменяет 6 этапов ухода. красота beauty хит" data-rating="4.9" data-price="5400" data-id="sulancho">
+          <div class="product-image"><img src="images/products/sulancho.jpg" alt="Суланьцао — спрей для лица" loading="lazy" class="img-fade"><div class="product-badge">ХИТ</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Суланьцао — спрей для лица</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(186)</span></div>
+            <p class="product-desc">Спрей. Заменяет 6 этапов ухода.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=sulancho">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Суланьцао — спрей для лица')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="breath" data-title="травяной напиток «тим ранчи»" data-search="травяной напиток «тим ранчи» 98,3% дигидрокверцетина. 13 компонентов. дыхание breath дыхание" data-rating="4.9" data-price="9300" data-id="tim-ranchi">
+          <div class="product-image"><img src="images/products/tim-ranchi.jpg" alt="Травяной напиток «Тим Ранчи»" loading="lazy" class="img-fade"><div class="product-badge">Дыхание</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Травяной напиток «Тим Ранчи»</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(167)</span></div>
+            <p class="product-desc">98,3% дигидрокверцетина. 13 компонентов.</p>
+            <div class="product-meta"><span class="product-series">9 300 ₽</span><span class="old-price">11 500 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=tim-ranchi">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Травяной напиток «Тим Ранчи»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="liver" data-title="напиток с пептидами печени и куркумой" data-search="напиток с пептидами печени и куркумой поддержка печени. пептиды, куркума, шиповник. печень liver детокс" data-rating="4.9" data-price="9300" data-id="liver-peptide">
+          <div class="product-image"><img src="images/products/liver-peptide.jpg" alt="Напиток с пептидами печени и куркумой" loading="lazy" class="img-fade"><div class="product-badge">Детокс</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Напиток с пептидами печени и куркумой</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(156)</span></div>
+            <p class="product-desc">Поддержка печени. Пептиды, куркума, шиповник.</p>
+            <div class="product-meta"><span class="product-series">9 300 ₽</span><span class="old-price">11 500 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=liver-peptide">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Напиток с пептидами печени и куркумой')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="beauty" data-title="иша ян мэй" data-search="иша ян мэй раствор для интимной гигиены. красота beauty интим" data-rating="4.9" data-price="5400" data-id="isha-yan-mey">
+          <div class="product-image"><img src="images/products/isha-yan-mey.jpg" alt="Иша Ян Мэй" loading="lazy" class="img-fade"><div class="product-badge">Интим</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Иша Ян Мэй</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(156)</span></div>
+            <p class="product-desc">Раствор для интимной гигиены.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=isha-yan-mey">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Иша Ян Мэй')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="joints" data-title="кэ лэ шо — крем-бальзам" data-search="кэ лэ шо — крем-бальзам травяной крем-бальзам. 15 компонентов. суставы joints хит" data-rating="4.9" data-price="5400" data-id="ke-le-sho">
+          <div class="product-image"><img src="images/products/ke-le-sho.jpg" alt="Кэ Лэ Шо — крем-бальзам" loading="lazy" class="img-fade"><div class="product-badge">Хит</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Кэ Лэ Шо — крем-бальзам</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(127)</span></div>
+            <p class="product-desc">Травяной крем-бальзам. 15 компонентов.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=ke-le-sho">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Кэ Лэ Шо — крем-бальзам')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="liver" data-title="5-этапный комплекс очищения «в»" data-search="5-этапный комплекс очищения «в» полный цикл здоровья для женщин. детокс liver флагман" data-rating="4.9" data-price="29900" data-id="complex-v">
+          <div class="product-image"><img src="images/products/complex-v.jpg" alt="5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «В»" loading="lazy" class="img-fade"><div class="product-badge">ФЛАГМАН</div></div>
+          <div class="product-info">
+            <h3 class="product-title">5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «В»</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(87)</span></div>
+            <p class="product-desc">Полный цикл здоровья для женщин.</p>
+            <div class="product-meta"><span class="product-series">29 900 ₽</span><span class="old-price">38 000 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=complex-v">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «В»')">Заказать</button>
+            </div>
+          </div>
+        </article></div>
+      <div style="text-align:center;margin-top:32px"><a href="catalog.html" class="btn btn-primary">Весь каталог →</a></div>
+    </div>
+  </section>
+
+  
+  <section class="about" id="about-preview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">О компании</span>
+        <h2 class="section-title">JIMON GROUP · 金木集团</h2>
+      </div>
+      <div class="facts-grid">
+        <div class="fact-card"><div class="fact-num">1993</div><div class="fact-label">Год основания</div></div>
+        <div class="fact-card"><div class="fact-num">1300 му</div><div class="fact-label">Своя ферма</div></div>
+        <div class="fact-card"><div class="fact-num">56</div><div class="fact-label">Патентов</div></div>
+        <div class="fact-card"><div class="fact-num">40+</div><div class="fact-label">Стран экспорта</div></div>
+        <div class="fact-card"><div class="fact-num">7000 т</div><div class="fact-label">Продукции в год</div></div>
+        <div class="fact-card"><div class="fact-num">GMP</div><div class="fact-label">ISO · HACCP · HALAL</div></div>
+      </div>
+      <div class="president president--compact">
+        <div class="president__photo">
+          <img src="images/president.jpg" alt="НИЮ ЛИ УЕИ" onerror="this.src='images/products/president.jpg'">
+        </div>
+        <div class="president__info">
+          <h3>НИЮ ЛИ УЕИ</h3>
+          <div class="role">Президент JIMON GROUP · 金木集团</div>
+          <p>Основатель и председатель правления. Более 30 лет ведёт компанию от локального производства к международному холдингу.</p>
+          <a href="about.html" class="btn btn-primary" style="margin-top:16px">Подробнее о компании →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Частые вопросы</h2>
+      </div>
+      <div class="faq-list">
+        <details><summary>Как выбрать продукт?</summary><p>Определите цель: детокс, суставы, сердце, кожа, иммунитет. Напишите нам — поможем подобрать.</p></details>
+        <details><summary>Как сделать заказ?</summary><p>Нажмите кнопку «Заказать» — откроются мессенджеры. Напишите нам, и менеджер оформит заказ.</p></details>
+        <details><summary>Есть ли сертификаты?</summary><p>GMP, ISO, HACCP, HALAL, FSSC 22000, KOSHER.</p></details>
+        <details><summary>Как быстро приходит заказ?</summary><p>3–7 рабочих дней по России. Отправка из Новосибирска.</p></details>
+        <details><summary>Это лекарство?</summary><p>Нет, БАД и функциональное питание. Проконсультируйтесь со специалистом.</p></details>
+        <details><summary>Работаете с оптовиками?</summary><p>Да, напишите нам.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo"><span class="logo-icon">金木</span><span class="logo-text">JIMON GROUP</span></div>
+          <p>Традиционная китайская медицина и продукты большого здоровья с 1993 года.</p>
+          <div class="footer-social">
+            <a href="https://t.me/+lIERYWNvJ9JjNWFi" target="_blank" rel="noopener" title="Telegram">✈️ Telegram</a>
+            <a href="https://wa.me/79513508528" target="_blank" rel="noopener" title="WhatsApp">💬 WhatsApp</a>
+            <a href="https://vk.com/" target="_blank" rel="noopener" title="VK">VK</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Навигация</h4>
+          <a href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="advantages.html">Комплексы</a>
+          <a href="about.html">О компании</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+        <div class="footer-links">
+          <h4>Контакты</h4>
+          <a href="tel:+70000000000">Позвонить</a>
+          <a href="mailto:info@jimon.ru">info@jimon.ru</a>
+          <span style="display:block;margin-top:6px;opacity:0.8">Пн–Вс: 10:00–22:00 (МСК)</span>
+          <span style="display:block;margin-top:4px;opacity:0.8">Новосибирск</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 JIMON GROUP · 金木集团. Все права защищены.</p>
+        <p style="margin-top:8px;font-size:0.8rem;opacity:0.7">Не является лекарственным средством. Продукт не предназначен для лечения заболеваний.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="totop" id="totop" aria-label="Наверх">↑</button>
+  <div class="toast" id="toast"><span>✓</span> <span id="toastText">Готово</span></div>
+
+  <div class="product-modal" id="productModal" aria-hidden="true">
+    <div class="product-modal__backdrop" onclick="closeProductModal()"></div>
+    <div class="product-modal__box">
+      <button class="product-modal__close" onclick="closeProductModal()">✕</button>
+      <div class="product-modal__grid">
+        <div class="product-modal__img" id="pmImg"></div>
+        <div class="product-modal__info">
+          <span class="product-modal__cat" id="pmCat"></span>
+          <h2 id="pmTitle"></h2>
+          <div class="product-modal__rating" id="pmRating"></div>
+          <p class="product-modal__desc" id="pmDesc"></p>
+          <div class="product-modal__quick" id="pmQuick"></div>
+          <div class="product-modal__price-row">
+            <div class="product-modal__price" id="pmPrice"></div>
+            <div class="product-modal__oldprice" id="pmOldPrice"></div>
+          </div>
+          <div class="product-modal__actions">
+            <button type="button" class="btn btn-primary" id="pmOrderBtn">Заказать</button>
+            <a class="btn btn-outline-green" id="pmShareLink" href="#">Открыть страницу</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-modal__tabs">
+        <div class="tabs__nav" id="pmTabsNav">
+          <button type="button" class="tabs__btn active" data-tab="desc">Описание</button>
+          <button type="button" class="tabs__btn" data-tab="composition">Состав</button>
+          <button type="button" class="tabs__btn" data-tab="indications">Показания</button>
+          <button type="button" class="tabs__btn" data-tab="application">Применение</button>
+          <button type="button" class="tabs__btn" data-tab="results">Результаты</button>
+          <button type="button" class="tabs__btn" data-tab="combos">Сочетания</button>
+        </div>
+        <div class="tabs__content active" id="tab-desc"></div>
+        <div class="tabs__content" id="tab-composition"></div>
+        <div class="tabs__content" id="tab-indications"></div>
+        <div class="tabs__content" id="tab-application"></div>
+        <div class="tabs__content" id="tab-results"></div>
+        <div class="tabs__content" id="tab-combos"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="order-modal" id="orderModal" aria-hidden="true">
+    <div class="order-modal__backdrop" onclick="closeOrderModal()"></div>
+    <div class="order-modal__box">
+      <button class="order-modal__close" onclick="closeOrderModal()" aria-label="Закрыть">✕</button>
+      <div class="order-modal__icon">🌿</div>
+      <h3>Оформить заказ</h3>
+      <div class="order-modal__label" id="orderProductLabel"></div>
+      <p class="order-modal__hint">Выберите удобный способ связи — менеджер ответит в течение 15 минут и поможет с оформлением.</p>
+      <div class="order-modal__list">
+        <a href="https://t.me/+lIERYWNvJ9JjNWFi" target="_blank" rel="noopener" class="order-opt" onclick="showToast('Открываем Telegram…')"><span class="ic">✈️</span><span class="name">Telegram</span><span class="arrow">→</span></a>
+        <a href="https://wa.me/79513508528" target="_blank" rel="noopener" class="order-opt" onclick="showToast('Открываем WhatsApp…')"><span class="ic">💬</span><span class="name">WhatsApp</span><span class="arrow">→</span></a>
+        <a href="https://vk.com/" target="_blank" rel="noopener" class="order-opt"><span class="ic">💙</span><span class="name">ВКонтакте</span><span class="arrow">→</span></a>
+      </div>
+      <div class="order-modal__faq">
+        <details><summary>Это лекарство?</summary><p>Нет. Продукция относится к БАД / косметике / продуктам питания и не является лекарственным средством.</p></details>
+        <details><summary>Как быстро ответят?</summary><p>Обычно в течение 15 минут в рабочее время (10:00–22:00 МСК).</p></details>
+        <details><summary>Есть доставка?</summary><p>Да. Условия доставки подскажет менеджер при оформлении заказа.</p></details>
+      </div>
+      <p class="order-modal__footer">Работаем ежедневно с 10:00 до 22:00 (МСК)</p>
+    </div>
+  </div>
+
+  <script src="js/products-data.js?v=38"></script>
+  <script src="js/main.js?v=38"></script>
+</body>
+</html>

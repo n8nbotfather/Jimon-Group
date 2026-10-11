@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог — JIMON GROUP</title>
+  <meta name="description" content="Каталог">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=38">
+</head>
+<body>
+  <div class="river-flow" aria-hidden="true"><div class="river-track"></div></div>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><span class="logo-icon">金木</span><span class="logo-text">JIMON GROUP</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html" class="active">Каталог</a></li>
+        <li><a href="advantages.html">Комплексы</a></li>
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+        <li><a href="#" class="btn-nav" onclick="openOrderModal();return false;">Заказать</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="page-top">
+    <div class="container"><nav class="breadcrumbs"><a href="index.html">Главная</a><span class="crumb-sep">›</span><span class="crumb-current">Каталог</span></nav></div>
+    <div class="container">
+      <div class="catalog-head">
+        <span class="catalog-label">КАТАЛОГ · 32 ПРОДУКТОВ</span>
+        <h1 class="catalog-title">Все продукты JIMON GROUP</h1>
+      </div>
+      <div class="catalog-toolbar">
+        <div class="catalog-search">
+          <input type="search" id="catalogSearch" placeholder="Поиск: название, описание, категория..." autocomplete="off">
+        </div>
+        <div class="catalog-sort">
+          <select id="catalogSort">
+            <option value="default">По умолчанию</option>
+            <option value="rating">По рейтингу</option>
+            <option value="price-asc">Цена ↑</option>
+            <option value="price-desc">Цена ↓</option>
+            <option value="name">По названию</option>
+          </select>
+        </div>
+      </div>
+      <div class="filters" id="catalogFilters"><button class="filter-btn active" data-filter="all">Все <span class="filter-count">32</span></button>
+<button class="filter-btn" data-filter="joints">Суставы <span class="filter-count">3</span></button>
+<button class="filter-btn" data-filter="liver">Печень · Детокс <span class="filter-count">4</span></button>
+<button class="filter-btn" data-filter="heart">Сердце · Сосуды <span class="filter-count">3</span></button>
+<button class="filter-btn" data-filter="beauty">Красота <span class="filter-count">10</span></button>
+<button class="filter-btn" data-filter="immunity">Иммунитет <span class="filter-count">4</span></button>
+<button class="filter-btn" data-filter="energy">Энергия <span class="filter-count">4</span></button>
+<button class="filter-btn" data-filter="brain">Мозг · Сон <span class="filter-count">1</span></button>
+<button class="filter-btn" data-filter="breath">Дыхание <span class="filter-count">1</span></button>
+<button class="filter-btn" data-filter="diagnostics">Диагностика AI <span class="filter-count">1</span></button>
+<button class="filter-btn" data-filter="sleep">Сон <span class="filter-count">1</span></button></div>
+    </div>
+  </div>
+  <section class="catalog" style="padding-top:12px">
+    <div class="container">
+      <div class="products-grid" id="products-grid">
+        <article class="product-card " data-category="liver" data-title="5-этапный комплекс очищения «в»" data-search="5-этапный комплекс очищения «в» полный цикл здоровья для женщин. детокс liver флагман" data-rating="4.9" data-price="29900" data-id="complex-v">
+          <div class="product-image"><img src="images/products/complex-v.jpg" alt="5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «В»" loading="lazy" class="img-fade"><div class="product-badge">ФЛАГМАН</div></div>
+          <div class="product-info">
+            <h3 class="product-title">5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «В»</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(87)</span></div>
+            <p class="product-desc">Полный цикл здоровья для женщин.</p>
+            <div class="product-meta"><span class="product-series">29 900 ₽</span><span class="old-price">38 000 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=complex-v">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «В»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="liver" data-title="5-этапный комплекс очищения «а»" data-search="5-этапный комплекс очищения «а» полный цикл очищения. детокс liver флагман" data-rating="4.9" data-price="28700" data-id="complex-a">
+          <div class="product-image"><img src="images/products/complex-a.jpg" alt="5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «А»" loading="lazy" class="img-fade"><div class="product-badge">ФЛАГМАН</div></div>
+          <div class="product-info">
+            <h3 class="product-title">5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «А»</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(64)</span></div>
+            <p class="product-desc">Полный цикл очищения.</p>
+            <div class="product-meta"><span class="product-series">28 700 ₽</span><span class="old-price">38 000 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=complex-a">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «А»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="joints" data-title="кэ лэ шо — крем-бальзам" data-search="кэ лэ шо — крем-бальзам травяной крем-бальзам. 15 компонентов. суставы joints хит" data-rating="4.9" data-price="5400" data-id="ke-le-sho">
+          <div class="product-image"><img src="images/products/ke-le-sho.jpg" alt="Кэ Лэ Шо — крем-бальзам" loading="lazy" class="img-fade"><div class="product-badge">Хит</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Кэ Лэ Шо — крем-бальзам</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(127)</span></div>
+            <p class="product-desc">Травяной крем-бальзам. 15 компонентов.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=ke-le-sho">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Кэ Лэ Шо — крем-бальзам')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="liver" data-title="напиток с пептидами печени и куркумой" data-search="напиток с пептидами печени и куркумой поддержка печени. пептиды, куркума, шиповник. печень liver детокс" data-rating="4.9" data-price="9300" data-id="liver-peptide">
+          <div class="product-image"><img src="images/products/liver-peptide.jpg" alt="Напиток с пептидами печени и куркумой" loading="lazy" class="img-fade"><div class="product-badge">Детокс</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Напиток с пептидами печени и куркумой</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(156)</span></div>
+            <p class="product-desc">Поддержка печени. Пептиды, куркума, шиповник.</p>
+            <div class="product-meta"><span class="product-series">9 300 ₽</span><span class="old-price">11 500 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=liver-peptide">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Напиток с пептидами печени и куркумой')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="immunity" data-title="конфеты из цикория «цзиньму»" data-search="конфеты из цикория «цзиньму» король иммунитета. пре- и пробиотики. иммунитет immunity иммунитет" data-rating="4.7" data-price="5400" data-id="cicory">
+          <div class="product-image"><img src="images/products/cicory.jpg" alt="Конфеты из цикория «Цзиньму»" loading="lazy" class="img-fade"><div class="product-badge">Иммунитет</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Конфеты из цикория «Цзиньму»</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.7</span> <span class="reviews">(203)</span></div>
+            <p class="product-desc">Король иммунитета. Пре- и пробиотики.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=cicory">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Конфеты из цикория «Цзиньму»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="immunity" data-title="пептиды костного мозга крс «баоцин»" data-search="пептиды костного мозга крс «баоцин» пептидный комплекс для иммунитета. иммунитет immunity восстановление" data-rating="4.9" data-price="5400" data-id="baocin">
+          <div class="product-image"><img src="images/products/baocin.jpg" alt="Пептиды костного мозга КРС «Баоцин»" loading="lazy" class="img-fade"><div class="product-badge">Восстановление</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Пептиды костного мозга КРС «Баоцин»</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(78)</span></div>
+            <p class="product-desc">Пептидный комплекс для иммунитета.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=baocin">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Пептиды костного мозга КРС «Баоцин»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="immunity" data-title="напиток луо хан гоу" data-search="напиток луо хан гоу растительный напиток для желудка. жкт immunity жкт" data-rating="4.8" data-price="9300" data-id="luo-han-guo">
+          <div class="product-image"><img src="images/products/luo-han-guo.jpg" alt="Напиток Луо Хан Гоу" loading="lazy" class="img-fade"><div class="product-badge">ЖКТ</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Напиток Луо Хан Гоу</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.8</span> <span class="reviews">(112)</span></div>
+            <p class="product-desc">Растительный напиток для желудка.</p>
+            <div class="product-meta"><span class="product-series">9 300 ₽</span><span class="old-price">11 500 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=luo-han-guo">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Напиток Луо Хан Гоу')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="breath" data-title="травяной напиток «тим ранчи»" data-search="травяной напиток «тим ранчи» 98,3% дигидрокверцетина. 13 компонентов. дыхание breath дыхание" data-rating="4.9" data-price="9300" data-id="tim-ranchi">
+          <div class="product-image"><img src="images/products/tim-ranchi.jpg" alt="Травяной напиток «Тим Ранчи»" loading="lazy" class="img-fade"><div class="product-badge">Дыхание</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Травяной напиток «Тим Ранчи»</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(167)</span></div>
+            <p class="product-desc">98,3% дигидрокверцетина. 13 компонентов.</p>
+            <div class="product-meta"><span class="product-series">9 300 ₽</span><span class="old-price">11 500 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=tim-ranchi">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Травяной напиток «Тим Ранчи»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="heart" data-title="xue lan duo" data-search="xue lan duo натто и листья шелковицы. сердце heart сердце" data-rating="4.8" data-price="7700" data-id="xue-lan-duo">
+          <div class="product-image"><img src="images/products/xue-lan-duo.jpg" alt="Xue Lan Duo" loading="lazy" class="img-fade"><div class="product-badge">Сердце</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Xue Lan Duo</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.8</span> <span class="reviews">(94)</span></div>
+            <p class="product-desc">Натто и листья шелковицы.</p>
+            <div class="product-meta"><span class="product-series">7 700 ₽</span><span class="old-price">9 500 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=xue-lan-duo">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Xue Lan Duo')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="energy" data-title="почечный mayou" data-search="почечный mayou женьшень и хуанцзин для почек. энергия energy энергия" data-rating="4.7" data-price="6800" data-id="mayou">
+          <div class="product-image"><img src="images/products/mayou.jpg" alt="Почечный MAYOU" loading="lazy" class="img-fade"><div class="product-badge">Энергия</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Почечный MAYOU</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.7</span> <span class="reviews">(141)</span></div>
+            <p class="product-desc">Женьшень и хуанцзин для почек.</p>
+            <div class="product-meta"><span class="product-series">6 800 ₽</span><span class="old-price">8 500 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=mayou">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Почечный MAYOU')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="brain" data-title="мозговой yuanbao fengzi you" data-search="мозговой yuanbao fengzi you комплекс масел для мозга. мозг brain мозг" data-rating="4.8" data-price="5400" data-id="yuanbao">
+          <div class="product-image"><img src="images/products/yuanbao.jpg" alt="Мозговой Yuanbao Fengzi You" loading="lazy" class="img-fade"><div class="product-badge">Мозг</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Мозговой Yuanbao Fengzi You</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.8</span> <span class="reviews">(67)</span></div>
+            <p class="product-desc">Комплекс масел для мозга.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=yuanbao">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Мозговой Yuanbao Fengzi You')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="beauty" data-title="суланьцао — спрей для лица" data-search="суланьцао — спрей для лица спрей. заменяет 6 этапов ухода. красота beauty хит" data-rating="4.9" data-price="5400" data-id="sulancho">
+          <div class="product-image"><img src="images/products/sulancho.jpg" alt="Суланьцао — спрей для лица" loading="lazy" class="img-fade"><div class="product-badge">ХИТ</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Суланьцао — спрей для лица</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(186)</span></div>
+            <p class="product-desc">Спрей. Заменяет 6 этапов ухода.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=sulancho">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Суланьцао — спрей для лица')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="energy" data-title="xian yun you" data-search="xian yun you контроль веса и аппетита. вес energy вес" data-rating="4.6" data-price="5400" data-id="xian-yun-you">
+          <div class="product-image"><img src="images/products/xian-yun-you.jpg" alt="Xian Yun You" loading="lazy" class="img-fade"><div class="product-badge">Вес</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Xian Yun You</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.6</span> <span class="reviews">(103)</span></div>
+            <p class="product-desc">Контроль веса и аппетита.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=xian-yun-you">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Xian Yun You')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="liver" data-title="бирун канг — лимфодренаж" data-search="бирун канг — лимфодренаж лимфодренаж, вес, отёки. печень liver детокс" data-rating="4.8" data-price="5400" data-id="birun-kang">
+          <div class="product-image"><img src="images/products/birun-kang.jpg" alt="Бирун Канг — лимфодренаж" loading="lazy" class="img-fade"><div class="product-badge">Детокс</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Бирун Канг — лимфодренаж</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.8</span> <span class="reviews">(98)</span></div>
+            <p class="product-desc">Лимфодренаж, вес, отёки.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=birun-kang">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Бирун Канг — лимфодренаж')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="energy" data-title="льняной коллагеновый пептидный напиток" data-search="льняной коллагеновый пептидный напиток вес, обмен, красота. питание energy питание" data-rating="4.8" data-price="7000" data-id="flax-porridge">
+          <div class="product-image"><img src="images/products/flax-porridge.jpg" alt="Льняной коллагеновый пептидный напиток" loading="lazy" class="img-fade"><div class="product-badge">Питание</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Льняной коллагеновый пептидный напиток</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.8</span> <span class="reviews">(134)</span></div>
+            <p class="product-desc">Вес, обмен, красота.</p>
+            <div class="product-meta"><span class="product-series">7 000 ₽</span><span class="old-price">8 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=flax-porridge">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Льняной коллагеновый пептидный напиток')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="beauty" data-title="иша ян мэй" data-search="иша ян мэй раствор для интимной гигиены. красота beauty интим" data-rating="4.9" data-price="5400" data-id="isha-yan-mey">
+          <div class="product-image"><img src="images/products/isha-yan-mey.jpg" alt="Иша Ян Мэй" loading="lazy" class="img-fade"><div class="product-badge">Интим</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Иша Ян Мэй</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(156)</span></div>
+            <p class="product-desc">Раствор для интимной гигиены.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=isha-yan-mey">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Иша Ян Мэй')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="beauty" data-title="глазной бактериостатический раствор sofora" data-search="глазной бактериостатический раствор sofora чудо-карандаш. 33 травы. красота beauty для глаз" data-rating="4.7" data-price="5400" data-id="eye-solution">
+          <div class="product-image"><img src="images/products/eye-solution.jpg" alt="Глазной бактериостатический раствор Sofora" loading="lazy" class="img-fade"><div class="product-badge">Для глаз</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Глазной бактериостатический раствор Sofora</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.7</span> <span class="reviews">(92)</span></div>
+            <p class="product-desc">Чудо-карандаш. 33 травы.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=eye-solution">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Глазной бактериостатический раствор Sofora')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="joints" data-title="костный коллаген «шань ли нэн»" data-search="костный коллаген «шань ли нэн» кости, суставы, связки. суставы joints кости" data-rating="4.8" data-price="5400" data-id="bone-collagen">
+          <div class="product-image"><img src="images/products/bone-collagen.jpg" alt="Костный коллаген «Шань Ли Нэн»" loading="lazy" class="img-fade"><div class="product-badge">Кости</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Костный коллаген «Шань Ли Нэн»</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.8</span> <span class="reviews">(67)</span></div>
+            <p class="product-desc">Кости, суставы, связки.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=bone-collagen">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Костный коллаген «Шань Ли Нэн»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="joints" data-title="суставной коллаген «дэ линэн»" data-search="суставной коллаген «дэ линэн» глюкозамин, хондроитин, коллаген. суставы joints комплекс" data-rating="4.8" data-price="5400" data-id="joint-collagen">
+          <div class="product-image"><img src="images/products/joint-collagen.jpg" alt="Суставной коллаген «Дэ Линэн»" loading="lazy" class="img-fade"><div class="product-badge">Комплекс</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Суставной коллаген «Дэ Линэн»</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.8</span> <span class="reviews">(89)</span></div>
+            <p class="product-desc">Глюкозамин, хондроитин, коллаген.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=joint-collagen">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Суставной коллаген «Дэ Линэн»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="heart" data-title="кровочистка сюэ лань до" data-search="кровочистка сюэ лань до натто и шелковица. сердце heart кровь" data-rating="4.8" data-price="5400" data-id="xue-lan-duo-tabs">
+          <div class="product-image"><img src="images/products/xue-lan-duo-tabs.jpg" alt="Кровочистка Сюэ Лань До" loading="lazy" class="img-fade"><div class="product-badge">Кровь</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Кровочистка Сюэ Лань До</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.8</span> <span class="reviews">(118)</span></div>
+            <p class="product-desc">Натто и шелковица.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=xue-lan-duo-tabs">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Кровочистка Сюэ Лань До')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="diagnostics" data-title="ai small quality" data-search="ai small quality приложение с ии. диагностика. диагностика ai diagnostics ai" data-rating="4.6" data-price="5400" data-id="ai-diagnostic">
+          <div class="product-image"><img src="images/products/ai-diagnostic.jpg" alt="AI Small Quality" loading="lazy" class="img-fade"><div class="product-badge">AI</div></div>
+          <div class="product-info">
+            <h3 class="product-title">AI Small Quality</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.6</span> <span class="reviews">(29)</span></div>
+            <p class="product-desc">Приложение с ИИ. Диагностика.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 000 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=ai-diagnostic">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('AI Small Quality')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="beauty" data-title="aura curu — спрей" data-search="aura curu — спрей моделирующий спрей. красота beauty новинка" data-rating="4.7" data-price="5400" data-id="aura-spray">
+          <div class="product-image"><img src="images/products/aura-spray.jpg" alt="Aura Curu — спрей" loading="lazy" class="img-fade"><div class="product-badge">НОВИНКА</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Aura Curu — спрей</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.7</span> <span class="reviews">(38)</span></div>
+            <p class="product-desc">Моделирующий спрей.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=aura-spray">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Aura Curu — спрей')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="beauty" data-title="st·qanon spf50+ pa++++" data-search="st·qanon spf50+ pa++++ солнцезащитный крем. красота beauty spf50+" data-rating="4.9" data-price="5400" data-id="sunscreen-stqanon">
+          <div class="product-image"><img src="images/products/sunscreen-stqanon.jpg" alt="St·QANON SPF50+ PA++++" loading="lazy" class="img-fade"><div class="product-badge">SPF50+</div></div>
+          <div class="product-info">
+            <h3 class="product-title">St·QANON SPF50+ PA++++</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(71)</span></div>
+            <p class="product-desc">Солнцезащитный крем.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=sunscreen-stqanon">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('St·QANON SPF50+ PA++++')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="beauty" data-title="набор «снежная орхидея» — 6 предметов" data-search="набор «снежная орхидея» — 6 предметов полный уход на основе красного риса. красота beauty подарок" data-rating="4.9" data-price="33000" data-id="snow-orchid-set">
+          <div class="product-image"><img src="images/products/snow-orchid-set.jpg" alt="Набор «Снежная орхидея» — 6 предметов" loading="lazy" class="img-fade"><div class="product-badge">ПОДАРОК</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Набор «Снежная орхидея» — 6 предметов</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(34)</span></div>
+            <p class="product-desc">Полный уход на основе красного риса.</p>
+            <div class="product-meta"><span class="product-series">33 000 ₽</span><span class="old-price">41 000 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=snow-orchid-set">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Набор «Снежная орхидея» — 6 предметов')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="beauty" data-title="антивозрастной спрей снежная орхидея" data-search="антивозрастной спрей снежная орхидея разглаживает морщины. красота beauty лифтинг" data-rating="4.8" data-price="5400" data-id="snow-orchid-cream">
+          <div class="product-image"><img src="images/products/snow-orchid-cream.jpg" alt="Антивозрастной спрей Снежная Орхидея" loading="lazy" class="img-fade"><div class="product-badge">ЛИФТИНГ</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Антивозрастной спрей Снежная Орхидея</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.8</span> <span class="reviews">(62)</span></div>
+            <p class="product-desc">Разглаживает морщины.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=snow-orchid-cream">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Антивозрастной спрей Снежная Орхидея')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="energy" data-title="порошок женьшеня и дендробиума" data-search="порошок женьшеня и дендробиума селезёнка, инь. энергия energy жкт" data-rating="4.7" data-price="5400" data-id="ginseng-dendrobium">
+          <div class="product-image"><img src="images/products/ginseng-dendrobium.jpg" alt="Порошок женьшеня и дендробиума" loading="lazy" class="img-fade"><div class="product-badge">ЖКТ</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Порошок женьшеня и дендробиума</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.7</span> <span class="reviews">(36)</span></div>
+            <p class="product-desc">Селезёнка, инь.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=ginseng-dendrobium">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Порошок женьшеня и дендробиума')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="sleep" data-title="порошок из черного нефрита" data-search="порошок из черного нефрита согревает, снимает усталость. релаксация sleep релакс" data-rating="4.8" data-price="11100" data-id="jade-powder">
+          <div class="product-image"><img src="images/products/jade-powder.jpg" alt="Порошок из черного нефрита" loading="lazy" class="img-fade"><div class="product-badge">РЕЛАКС</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Порошок из черного нефрита</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.8</span> <span class="reviews">(28)</span></div>
+            <p class="product-desc">Согревает, снимает усталость.</p>
+            <div class="product-meta"><span class="product-series">11 100 ₽</span><span class="old-price">13 900 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=jade-powder">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Порошок из черного нефрита')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="beauty" data-title="напиток для кожи all-skin" data-search="напиток для кожи all-skin структура кожи, коллаген. красота beauty патент" data-rating="4.8" data-price="5400" data-id="all-skin">
+          <div class="product-image"><img src="images/products/all-skin.jpg" alt="Напиток для кожи All-Skin" loading="lazy" class="img-fade"><div class="product-badge">ПАТЕНТ</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Напиток для кожи All-Skin</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.8</span> <span class="reviews">(44)</span></div>
+            <p class="product-desc">Структура кожи, коллаген.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=all-skin">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Напиток для кожи All-Skin')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="immunity" data-title="микрогранулы гомологичного омоложения" data-search="микрогранулы гомологичного омоложения пре- и пробиотики. иммунитет immunity иммунитет" data-rating="4.7" data-price="5400" data-id="homological-youth">
+          <div class="product-image"><img src="images/products/homological-youth.jpg" alt="Микрогранулы гомологичного омоложения" loading="lazy" class="img-fade"><div class="product-badge">ИММУНИТЕТ</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Микрогранулы гомологичного омоложения</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.7</span> <span class="reviews">(33)</span></div>
+            <p class="product-desc">Пре- и пробиотики.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=homological-youth">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Микрогранулы гомологичного омоложения')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="heart" data-title="чай улун с семенами кассии" data-search="чай улун с семенами кассии ускоряет обмен, выводит холестерин. сердце heart чай" data-rating="4.7" data-price="5400" data-id="oolong-cassia">
+          <div class="product-image"><img src="images/products/oolong-cassia.jpg" alt="Чай улун с семенами кассии" loading="lazy" class="img-fade"><div class="product-badge">ЧАЙ</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Чай улун с семенами кассии</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.7</span> <span class="reviews">(56)</span></div>
+            <p class="product-desc">Ускоряет обмен, выводит холестерин.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=oolong-cassia">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Чай улун с семенами кассии')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="beauty" data-title="комплекс «иша ян мэй» с лактобактериями" data-search="комплекс «иша ян мэй» с лактобактериями фитокапсулы с лактобактериями. красота beauty женщинам" data-rating="4.9" data-price="5400" data-id="isha-lacto">
+          <div class="product-image"><img src="images/products/isha-lacto.jpg" alt="Комплекс «Иша Ян Мэй» с лактобактериями" loading="lazy" class="img-fade"><div class="product-badge">ЖЕНЩИНАМ</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Комплекс «Иша Ян Мэй» с лактобактериями</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.9</span> <span class="reviews">(68)</span></div>
+            <p class="product-desc">Фитокапсулы с лактобактериями.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=isha-lacto">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Комплекс «Иша Ян Мэй» с лактобактериями')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card " data-category="beauty" data-title="крем-смесь с бамбуком «ши ху»" data-search="крем-смесь с бамбуком «ши ху» питательный крем с бамбуком. красота beauty питание" data-rating="4.7" data-price="5400" data-id="bamboo-cream">
+          <div class="product-image"><img src="images/products/bamboo-cream.jpg" alt="Крем-смесь с бамбуком «Ши Ху»" loading="lazy" class="img-fade"><div class="product-badge">ПИТАНИЕ</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Крем-смесь с бамбуком «Ши Ху»</h3>
+            <div class="product-rating"><span class="stars">★★★★★</span> <span class="rating-num">4.7</span> <span class="reviews">(31)</span></div>
+            <p class="product-desc">Питательный крем с бамбуком.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span><span class="old-price">6 800 ₽</span></div>
+            <div class="product-actions">
+              <a class="btn btn-sm btn-outline-green" href="product.html?id=bamboo-cream">Подробнее</a>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Крем-смесь с бамбуком «Ши Ху»')">Заказать</button>
+            </div>
+          </div>
+        </article></div>
+      <p class="catalog-empty" id="catalogEmpty" style="display:none;text-align:center;padding:40px;color:#888">Ничего не найдено</p>
+      <div class="catalog-more" id="catalogMoreWrap">
+        <button type="button" class="btn btn-primary" id="catalogMoreBtn">Показать ещё</button>
+        <p class="catalog-more-info" id="catalogMoreInfo"></p>
+      </div>
+      <section class="recent-block" id="recentBlock" style="display:none;margin-top:48px">
+        <h2 class="section-title" style="text-align:center;margin-bottom:24px">Вы недавно смотрели</h2>
+        <div class="products-grid" id="recentGrid"></div>
+      </section>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo"><span class="logo-icon">金木</span><span class="logo-text">JIMON GROUP</span></div>
+          <p>Традиционная китайская медицина и продукты большого здоровья с 1993 года.</p>
+          <div class="footer-social">
+            <a href="https://t.me/+lIERYWNvJ9JjNWFi" target="_blank" rel="noopener" title="Telegram">✈️ Telegram</a>
+            <a href="https://wa.me/79513508528" target="_blank" rel="noopener" title="WhatsApp">💬 WhatsApp</a>
+            <a href="https://vk.com/" target="_blank" rel="noopener" title="VK">VK</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Навигация</h4>
+          <a href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="advantages.html">Комплексы</a>
+          <a href="about.html">О компании</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+        <div class="footer-links">
+          <h4>Контакты</h4>
+          <a href="tel:+70000000000">Позвонить</a>
+          <a href="mailto:info@jimon.ru">info@jimon.ru</a>
+          <span style="display:block;margin-top:6px;opacity:0.8">Пн–Вс: 10:00–22:00 (МСК)</span>
+          <span style="display:block;margin-top:4px;opacity:0.8">Новосибирск</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 JIMON GROUP · 金木集团. Все права защищены.</p>
+        <p style="margin-top:8px;font-size:0.8rem;opacity:0.7">Не является лекарственным средством. Продукт не предназначен для лечения заболеваний.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="totop" id="totop" aria-label="Наверх">↑</button>
+  <div class="toast" id="toast"><span>✓</span> <span id="toastText">Готово</span></div>
+
+  <div class="product-modal" id="productModal" aria-hidden="true">
+    <div class="product-modal__backdrop" onclick="closeProductModal()"></div>
+    <div class="product-modal__box">
+      <button class="product-modal__close" onclick="closeProductModal()">✕</button>
+      <div class="product-modal__grid">
+        <div class="product-modal__img" id="pmImg"></div>
+        <div class="product-modal__info">
+          <span class="product-modal__cat" id="pmCat"></span>
+          <h2 id="pmTitle"></h2>
+          <div class="product-modal__rating" id="pmRating"></div>
+          <p class="product-modal__desc" id="pmDesc"></p>
+          <div class="product-modal__quick" id="pmQuick"></div>
+          <div class="product-modal__price-row">
+            <div class="product-modal__price" id="pmPrice"></div>
+            <div class="product-modal__oldprice" id="pmOldPrice"></div>
+          </div>
+          <div class="product-modal__actions">
+            <button type="button" class="btn btn-primary" id="pmOrderBtn">Заказать</button>
+            <a class="btn btn-outline-green" id="pmShareLink" href="#">Открыть страницу</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-modal__tabs">
+        <div class="tabs__nav" id="pmTabsNav">
+          <button type="button" class="tabs__btn active" data-tab="desc">Описание</button>
+          <button type="button" class="tabs__btn" data-tab="composition">Состав</button>
+          <button type="button" class="tabs__btn" data-tab="indications">Показания</button>
+          <button type="button" class="tabs__btn" data-tab="application">Применение</button>
+          <button type="button" class="tabs__btn" data-tab="results">Результаты</button>
+          <button type="button" class="tabs__btn" data-tab="combos">Сочетания</button>
+        </div>
+        <div class="tabs__content active" id="tab-desc"></div>
+        <div class="tabs__content" id="tab-composition"></div>
+        <div class="tabs__content" id="tab-indications"></div>
+        <div class="tabs__content" id="tab-application"></div>
+        <div class="tabs__content" id="tab-results"></div>
+        <div class="tabs__content" id="tab-combos"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="order-modal" id="orderModal" aria-hidden="true">
+    <div class="order-modal__backdrop" onclick="closeOrderModal()"></div>
+    <div class="order-modal__box">
+      <button class="order-modal__close" onclick="closeOrderModal()" aria-label="Закрыть">✕</button>
+      <div class="order-modal__icon">🌿</div>
+      <h3>Оформить заказ</h3>
+      <div class="order-modal__label" id="orderProductLabel"></div>
+      <p class="order-modal__hint">Выберите удобный способ связи — менеджер ответит в течение 15 минут и поможет с оформлением.</p>
+      <div class="order-modal__list">
+        <a href="https://t.me/+lIERYWNvJ9JjNWFi" target="_blank" rel="noopener" class="order-opt" onclick="showToast('Открываем Telegram…')"><span class="ic">✈️</span><span class="name">Telegram</span><span class="arrow">→</span></a>
+        <a href="https://wa.me/79513508528" target="_blank" rel="noopener" class="order-opt" onclick="showToast('Открываем WhatsApp…')"><span class="ic">💬</span><span class="name">WhatsApp</span><span class="arrow">→</span></a>
+        <a href="https://vk.com/" target="_blank" rel="noopener" class="order-opt"><span class="ic">💙</span><span class="name">ВКонтакте</span><span class="arrow">→</span></a>
+      </div>
+      <div class="order-modal__faq">
+        <details><summary>Это лекарство?</summary><p>Нет. Продукция относится к БАД / косметике / продуктам питания и не является лекарственным средством.</p></details>
+        <details><summary>Как быстро ответят?</summary><p>Обычно в течение 15 минут в рабочее время (10:00–22:00 МСК).</p></details>
+        <details><summary>Есть доставка?</summary><p>Да. Условия доставки подскажет менеджер при оформлении заказа.</p></details>
+      </div>
+      <p class="order-modal__footer">Работаем ежедневно с 10:00 до 22:00 (МСК)</p>
+    </div>
+  </div>
+
+  <script src="js/products-data.js?v=38"></script>
+  <script src="js/main.js?v=38"></script>
+</body>
+</html>
